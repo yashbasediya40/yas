@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Out of Date 💖</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Layer 1: Main Question with Personal Touch -->
+    <div class="layer active" id="layer1">
+      <div class="intro-text">Hey, Jagriti!</div>
+      <h1>Would you like to go on a date with me? 💖</h1>
+      <p class="subtext">I promise a magical movie date filled with laughter and love!</p>
+      <div class="button-group">
+        <button class="btn yes-btn" onclick="showLayer(2)">YES! 😊</button>
+        <button class="btn no-btn" onclick="showLayer(3)">No 😢</button>
+      </div>
+    </div>
+
+    <!-- Layer 2: Sweet Affirmation -->
+    <div class="layer" id="layer2">
+      <h1>Awesome! I’m so excited to spend time with you. 🌹</h1>
+      <p class="subtext">Every moment with you makes my heart flutter.</p>
+      <div class="button-group">
+        <button class="btn next-btn" onclick="showLayer(5)">Next ➡️</button>
+      </div>
+    </div>
+
+    <!-- Layer 3: Playful Rethink -->
+    <div class="layer" id="layer3">
+      <h1>Are you sure, Jagriti? A magical date awaits! 😍</h1>
+      <p class="subtext">Sometimes saying “No” means missing out on something truly special.</p>
+      <div class="button-group">
+        <button class="btn yes-btn" onclick="showLayer(2)">I changed my mind! 💖</button>
+        <button class="btn no-btn" onclick="showLayer(4)">Still No 😔</button>
+      </div>
+    </div>
+
+    <!-- Layer 4: Final Playful Attempt -->
+    <div class="layer" id="layer4">
+      <h1>Last chance, darling! Your smile is worth it. 😘</h1>
+      <p class="subtext">Imagine an evening of movies, cuddles, and endless laughter!</p>
+      <div class="button-group">
+        <button class="btn yes-btn" onclick="showLayer(2)">OKAY YES! 😍</button>
+        <button class="btn no-btn" id="finalNoBtn">No 😣</button>
+      </div>
+    </div>
+
+    <!-- Layer 5: Date Confirmation with Pre-filled Details -->
+    <div class="layer" id="layer5">
+      <h1>YAY! It's a date, Jagriti! 🎉</h1>
+      <p class="date-details">
+        Let's meet at <strong>DDX Cinemas, Kolar Road</strong> for a movie date on <strong>25/02/2025</strong> at <strong>4:00 PM</strong>.
+      </p>
+      <p class="subtext">I can’t wait to see your beautiful smile in person!</p>
+      <div class="button-group">
+        <button class="btn confirm-btn" id="whatsAppBtn">Confirm on WhatsApp 💌</button>
+        <button class="btn no-btn" id="movingNoBtn">No</button>
+      </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
